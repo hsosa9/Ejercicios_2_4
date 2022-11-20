@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:video="clr-namespace:Xam.Forms.VideoPlayer;assembly=Xam.Forms.VideoPlayer"
+              x:Class="Ejercicios_2_4.MainPage">
+
+    <StackLayout>
+
+        <video:VideoPlayer PlayCompletion="videoPlayer_PlayCompletion"   x:Name="videoPlayer" BackgroundColor="GreenYellow"
+                HorizontalOptions="Center"
+                HeightRequest="200" WidthRequest="300"/>
+        
+        
+        <Button Text="Galeria" x:Name="btnVideo" Clicked="btnVideo_Clicked" />
+        <Button Text="Iniciar Grabacion" x:Name="btnreproducir" Clicked="btnreproducir_Clicked" />
+
+
+        <Entry Placeholder="Nombre" x:Name="txtNombre" />
+        <Entry Placeholder="Desscripcion" x:Name="txtPineda" />
+
+        
+        <Button Text="Guardar a Sqlite" x:Name="btnGuardar" Clicked="btnGuardar_Clicked" />
+        <Button Text="Ver Listado" x:Name="btnLista" Clicked="btnLista_Clicked" />
+
+    </StackLayout>
+
+</ContentPage>
